@@ -55,6 +55,7 @@ l = WorkWithList()
 run = 1
 while run:
     i = l.mainMenu()
+    os.system('cls' if os.name == 'nt' else 'clear') # ОЧИЩАЕМ ТЕРМИНАЛ!!!
     if i == 1:
         l.show()
     elif i == 2:
